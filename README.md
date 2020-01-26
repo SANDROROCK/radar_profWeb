@@ -7,6 +7,7 @@
 <li>Axios</li>
 <li>Redux com Hooks</li>
 <li>Upload de imagens</li>
+<li>Geolocalização do Browser</li>
 
 </ul>
 
