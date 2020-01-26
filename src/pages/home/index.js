@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import {useSelector,useDispatch} from 'react-redux';
 import '../../global.css';
 import './Sidebar.css';
 import './style.css';
@@ -8,7 +9,12 @@ import Prof from '../../components/profs';
 import InputMask from "react-input-mask";
 
 
+
+
 function Home() {
+
+
+  const dispatch = useDispatch();
 
   const [profs, setProfs] = useState([]);
   const [latitude, setLatitude] = useState('');
@@ -46,10 +52,11 @@ function Home() {
 
   async function handleAtt() {
 
-    const result = await api.get('/prof');
-    console.log(result.data);
-    setProfs(result.data);
-
+    dispatch({
+      type:'ADD_TASK'
+    })
+     
+    
   }
 
 
