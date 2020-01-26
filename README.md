@@ -9,3 +9,5 @@
 <li>Upload de imagens</li>
 
 </ul>
+
+<img src='./imagens/home.png'/>

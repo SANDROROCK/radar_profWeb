@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import  './style.css';
 
 export default function Login() {
@@ -12,7 +12,9 @@ export default function Login() {
                 <input type="text"></input>
                 <label>Senha </label>
                 <input></input>
+                <Link to='/home'>
                 <button>Entrar</button>
+                </Link>
             </form>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import '../../Main.css'
 function Prof(props){
 
 const Base = "http://localhost:3333/files/";
